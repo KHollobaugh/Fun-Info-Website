@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+import './NavBar.css'
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='navigation'>
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

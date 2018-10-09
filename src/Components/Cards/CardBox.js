@@ -7,12 +7,12 @@ const CardBox = (props) => {
   return (
     <div>
       <Card className='card'>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+        <CardImg top width="100%" src={props.post.postImg} alt="Card image cap" />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button>Button</Button>
+          <CardTitle>{props.post.title}</CardTitle>
+          <CardSubtitle>{props.post.subtitle}</CardSubtitle>
+          <CardText>{props.post.text}</CardText>
+          <Button>Read About It</Button>
         </CardBody>
       </Card>
     </div>
